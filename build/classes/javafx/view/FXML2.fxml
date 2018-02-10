@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="345.0" prefWidth="600.0">
+         <children>
+            <TabPane layoutX="14.0" layoutY="7.0" prefHeight="613.0" prefWidth="840.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Controle de Grão">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField layoutY="29.0" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Controle de bobinas">
+                  <content>
+                    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="258.0" prefWidth="591.0" />
+                  </content>
+                </Tab>
+                  <Tab text="Relatório de perda EX">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                  <Tab text="Solicitar produção EX">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="316.0" prefWidth="840.0">
+                           <children>
+                              <TableView layoutX="8.0" layoutY="84.0" prefHeight="302.0" prefWidth="776.0">
+                                <columns>
+                                    <TableColumn prefWidth="136.0" text="Código" />
+                                    <TableColumn prefWidth="90.0" text="Grãos" />
+                                  <TableColumn minWidth="6.0" prefWidth="100.0" text="Pigmentos" />
+                                  <TableColumn minWidth="0.0" prefWidth="112.0" text="Prazo" />
+                                    <TableColumn prefWidth="337.0" text="Solicitante" />
+                                </columns>
+                              </TableView>
+                              <Group layoutX="69.0" layoutY="-1.0" />
+                              <TextField layoutX="52.0" layoutY="55.0" prefHeight="27.0" prefWidth="116.0" />
+                              <Button layoutX="170.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #61a2b1;" text="Pesquisar" textFill="WHITE" />
+                              <Label layoutX="8.0" layoutY="60.0" text="Código:" />
+                              <Button layoutX="730.0" layoutY="56.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="52.0" style="-fx-background-color: #61a2b1;" text="Excluir" textFill="WHITE" />
+                              <Button layoutX="674.0" layoutY="56.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="52.0" style="-fx-background-color: #61a2b1;" text="Editar" textFill="WHITE" />
+                              <Button layoutX="618.0" layoutY="56.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="52.0" style="-fx-background-color: #61a2b1;" text="Novo" textFill="WHITE" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Solicitar produção CS">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                  <Tab text="Pedidos concluídos">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                  <Tab text="Controle de sacos">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+   </children>
+</VBox>

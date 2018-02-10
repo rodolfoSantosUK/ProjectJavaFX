@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vBoxCentral" prefHeight="700.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.FxmlInicioController">
+         <children>
+            <Pane onDragDetected="#abrirExtrusao" prefHeight="40.0" prefWidth="1010.0" />
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="55.0" prefWidth="945.0" style="-fx-background-color: white;">
+               <children>
+                  <Button layoutX="795.0" layoutY="19.0" mnemonicParsing="false" onAction="#abrirEntradaPedidoCorteSolda" prefHeight="25.0" prefWidth="142.0" styleClass="btnMenu" text="Acessar funcionalidade" />
+                  <Label layoutX="367.0" layoutY="13.0" text="Solicite entrada de pedido, gere seus relatórios " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="370.0" layoutY="30.0" text="edite entrada de pedido ... " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="99.0" layoutY="19.0" text="Entrada do pedido" textFill="#da9c3a">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+            <ImageView fitHeight="50.0" fitWidth="54.0" layoutX="8.0" layoutY="2.0">
+               <image>
+                  <Image url="@../resources/task.jpg" />
+               </image>
+            </ImageView>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="55.0" prefWidth="945.0" style="-fx-background-color: white;">
+               <children>
+                  <Button layoutX="795.0" layoutY="19.0" mnemonicParsing="false" onAction="#abrirControleBobinas" prefHeight="25.0" prefWidth="142.0" styleClass="btnMenu" text="Acessar funcionalidade" />
+                  <Label layoutX="367.0" layoutY="13.0" text="Solicite controle de bobinas, gere seus relatórios " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="370.0" layoutY="30.0" text="edite solicitaçoes de controle de bobinas... " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="99.0" layoutY="19.0" text="Controle de bobinas" textFill="#da9c3a">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+            <ImageView fitHeight="50.0" fitWidth="54.0" layoutX="9.0" layoutY="4.0">
+               <image>
+                  <Image url="@../resources/task.jpg" />
+               </image>
+            </ImageView>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="55.0" prefWidth="945.0" style="-fx-background-color: white;">
+               <children>
+                  <Button layoutX="795.0" layoutY="19.0" mnemonicParsing="false" onAction="#abrirControleSacosCS" prefHeight="25.0" prefWidth="142.0" styleClass="btnMenu" text="Acessar funcionalidade" />
+                  <Label layoutX="367.0" layoutY="13.0" text="Obtenha controle de sacos " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="370.0" layoutY="30.0" textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="99.0" layoutY="1.0" text="Controle de sacos " textFill="#da9c3a">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="367.0" layoutY="30.0" text="produzidos por dia ..." textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+            <ImageView fitHeight="50.0" fitWidth="54.0" layoutX="11.0" layoutY="1.0">
+               <image>
+                  <Image url="@../resources/task.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="99.0" layoutY="21.0" text="produzidos por dia" textFill="#da9c3a">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="55.0" prefWidth="945.0" style="-fx-background-color: white;">
+               <children>
+                  <Button layoutX="795.0" layoutY="19.0" mnemonicParsing="false" onAction="#abrirPedidosCS" prefHeight="25.0" prefWidth="142.0" styleClass="btnMenu" text="Acessar funcionalidade" />
+                  <Label layoutX="367.0" layoutY="13.0" text="Visualize o peso das perdas de extrusão  " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="370.0" layoutY="30.0" text="bem como corte e solda" textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="99.0" layoutY="19.0" text="Pedidos Concluídos" textFill="#da9c3a">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+            <ImageView fitHeight="50.0" fitWidth="54.0" layoutX="12.0" layoutY="2.0">
+               <image>
+                  <Image url="@../resources/task.jpg" />
+               </image>
+            </ImageView>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+ 
+         </children>
+      </VBox>

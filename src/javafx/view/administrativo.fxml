@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vBoxCentral" prefHeight="413.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.FxmlInicioController">
+         <children>
+            <Pane prefHeight="40.0" prefWidth="1010.0" />
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="55.0" prefWidth="945.0" style="-fx-background-color: white;">
+               <children>
+                  <Button layoutX="795.0" layoutY="19.0" mnemonicParsing="false" onAction="#exibirRelatorioGraoEstoque" prefHeight="25.0" prefWidth="142.0" styleClass="btnMenu" text="Acessar funcionalidade" />
+                  <Label layoutX="367.0" layoutY="13.0" text="Solicite relatório de grão, gere seus relatórios " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="370.0" layoutY="30.0" text="edite solicitaçoes de extrusão ... " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="99.0" layoutY="19.0" text="Relatório de grão em estoque" textFill="#da9c3a">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+            <ImageView fitHeight="50.0" fitWidth="54.0" layoutX="8.0" layoutY="2.0">
+               <image>
+                  <Image url="@../resources/task.jpg" />
+               </image>
+            </ImageView>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="55.0" prefWidth="945.0" style="-fx-background-color: white;">
+               <children>
+                  <Button onAction="#exibirRelatorioBobina"  layoutX="795.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" styleClass="btnMenu" text="Acessar funcionalidade" />
+                  <Label layoutX="367.0" layoutY="13.0" text="Solicite relatório de bobinas, gere seus relatórios " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="370.0" layoutY="30.0" text="edite solicitaçoes de corte e solda... " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="99.0" layoutY="19.0" text="Relatório de bobinas produzidas" textFill="#da9c3a">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="13.0" layoutY="2.0">
+                     <image>
+                        <Image url="@../resources/bobina.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="55.0" prefWidth="945.0" style="-fx-background-color: white;">
+               <children>
+                  <Button layoutX="795.0" layoutY="19.0" mnemonicParsing="false" onAction="#exibirRelatorioPerdaExtrusao" prefHeight="25.0" prefWidth="142.0" styleClass="btnMenu" text="Acessar funcionalidade" />
+                  <Label layoutX="367.0" layoutY="13.0" text="Obtenha controle sobre perdas na extrusão " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="370.0" layoutY="30.0" textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="99.0" layoutY="19.0" text="Relatório de perda na extrusão" textFill="#da9c3a">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="367.0" layoutY="30.0" text="e melhore ainda mais o processo de extrusão da sua empresa ..." textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="13.0" layoutY="8.0">
+                     <image>
+                        <Image url="@../resources/Corte.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="55.0" prefWidth="945.0" style="-fx-background-color: white;">
+               <children>
+                  <Button layoutX="795.0" layoutY="19.0" mnemonicParsing="false" onAction="#exibirRelatorioPedidoConcluido" prefHeight="25.0" prefWidth="142.0" styleClass="btnMenu" text="Acessar funcionalidade" />
+                  <Label layoutX="367.0" layoutY="13.0" text="Visualize os pedidos de extrusão, de corte e solda " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="370.0" layoutY="30.0" text="gere seus relatórios... " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="99.0" layoutY="19.0" text="Relatório de pedidos concluídos" textFill="#da9c3a">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="24.0" layoutY="5.0">
+                     <image>
+                        <Image url="@../resources/PedidosConcl.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+ 
+ <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="55.0" prefWidth="945.0" style="-fx-background-color: white;">
+               <children>
+                  <Button layoutX="795.0" layoutY="19.0" mnemonicParsing="false" onAction="#loadSolicEX" prefHeight="25.0" prefWidth="142.0" styleClass="btnMenu" text="Acessar funcionalidade" />
+                  <Label layoutX="367.0" layoutY="13.0" text="Visualize os pedidos de extrusão, de corte e solda " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="370.0" layoutY="30.0" text="gere seus relatórios... " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="101.0" layoutY="5.0" text="Inclusão de ordem de" textFill="#da9c3a">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+            <Label layoutX="101.0" layoutY="26.0" text="produção EX" textFill="#da9c3a">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="54.0" layoutX="12.0" layoutY="2.0">
+               <image>
+                  <Image url="@../resources/task.jpg" />
+               </image>
+            </ImageView>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+ 
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="55.0" prefWidth="945.0" style="-fx-background-color: white;">
+               <children>
+                  <Button layoutX="795.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" styleClass="btnMenu" text="Acessar funcionalidade" />
+                  <Label layoutX="367.0" layoutY="13.0" text="Solicite processo de extrusão, gere seus relatórios " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="370.0" layoutY="30.0" text="edite solicitaçoes de extrusão ... " textFill="#8d8585">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+            <Label layoutX="102.0" layoutY="5.0" text="Inclusão de ordem de " textFill="#da9c3a">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="26.0" text="produção CS" textFill="#da9c3a">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="54.0" layoutX="13.0" layoutY="1.0">
+               <image>
+                  <Image url="@../resources/task.jpg" />
+               </image>
+            </ImageView>
+               </children>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Pane>
+ 
+         </children>
+      </VBox>

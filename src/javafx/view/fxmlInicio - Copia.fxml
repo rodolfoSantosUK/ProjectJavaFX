@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1280.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.FxmlInicioController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0">
+         <left>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="852.0" prefWidth="214.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutY="34.0" mnemonicParsing="false" onAction="#abrirAdministrativo" prefHeight="41.0" prefWidth="214.0" styleClass="btnMenu" text="Administrativo" />
+                  <Button layoutY="75.0" mnemonicParsing="false" onAction="#abrirExtrusao" prefHeight="41.0" prefWidth="214.0" styleClass="btnMenu" text="Extrusão" />
+                  <Button layoutY="116.0" mnemonicParsing="false" onAction="#abrirCorteESolda" prefHeight="41.0" prefWidth="214.0" styleClass="btnMenu" text="Corte e solda" />
+                  <Button layoutY="157.0" mnemonicParsing="false" onAction="#abrirEstoque" prefHeight="41.0" prefWidth="214.0" styleClass="btnMenu" text="Estoque" />
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="1280.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+               <children>
+                   
+                   <Region maxWidth="-Infinity" minWidth="-Infinity" prefHeight="72.0" prefWidth="597.0" HBox.hgrow="ALWAYS" />
+                   
+                  <Label text="  CDPI" textFill="#eeebeb">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                    
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox fx:id="vBoxCentral" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

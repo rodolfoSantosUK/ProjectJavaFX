@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="535.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.FxmlSolicProdEXDialogController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="SOLICITAÇÃO DE PROCESSO DE EXTRUSÃO" textFill="#c67834">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    
+    <TextField fx:id="qtdGrao" layoutX="180.0" layoutY="81.0" prefHeight="25.0" prefWidth="78.0" />
+                              <Label layoutX="20.0" layoutY="85.0" text="*Quantidade de grão:" />
+                              <Label layoutX="20.0" layoutY="122.0" text="*Quantidade de pigmento:" />
+                              <TextField fx:id="qtdPigmento" layoutX="180.0" layoutY="118.0" prefHeight="25.0" prefWidth="78.0" />
+                              <DatePicker fx:id="datePrazo" layoutX="180.0" layoutY="190.0" prefHeight="25.0" prefWidth="133.0" />
+                              <Label layoutX="20.0" layoutY="194.0" text="*Prazo de conclusão:" />
+                              <Label layoutX="20.0" layoutY="267.0" text="Observações:" />
+                              <TextArea layoutX="180.0" layoutY="267.0" prefHeight="117.0" prefWidth="335.0" />
+      <Label layoutX="20.0" layoutY="230.0" text="*Solicitante:" />
+      <TextField fx:id="nmSolicitante" layoutX="180.0" layoutY="226.0" prefHeight="25.0" prefWidth="335.0" />
+      <Button layoutX="437.0" layoutY="409.0" mnemonicParsing="false" onAction="#salvarPedidoEX" prefHeight="25.0" prefWidth="78.0" styleClass="btn" text="Salvar" textFill="WHITE" />
+      <Button layoutX="355.0" layoutY="409.0" mnemonicParsing="false" onAction="#fecharPopup" prefHeight="25.0" prefWidth="78.0" styleClass="btnCancelar" text="Cancelar" textFill="#282323" />
+      <Separator layoutX="14.0" layoutY="41.0" prefHeight="0.0" prefWidth="498.0" stylesheets="@main.css" />
+      <Label layoutX="20.0" layoutY="155.0" text="*Status:" />
+      <ComboBox fx:id="comboBoxStatus" layoutX="180.0" layoutY="153.0" prefWidth="150.0" />
+      <Label layoutX="261.0" layoutY="85.0" text="kg" />
+      <Label layoutX="261.0" layoutY="122.0" text="kg" />
+    
+   </children>
+</AnchorPane>

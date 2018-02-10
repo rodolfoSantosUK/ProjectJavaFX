@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<VBox fx:id="vBoxControleSacosCS" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="1114.0" stylesheets="@../main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.FxmlControleSacosController">
+   <children>
+      <Pane maxHeight="1.7976931348623157E308" prefHeight="778.0" prefWidth="1114.0">
+         <children>
+           
+                        <Separator prefHeight="3.0" prefWidth="476.0" />
+                        <Label layoutX="10.0" layoutY="23.0" text="CORTE E SOLDA &gt; CONTROLE DE SACOS PRODUZIDOS POR DIA " textFill="#d07a17">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tableControleSacosCS" layoutX="63.0" layoutY="119.0" prefHeight="476.0" prefWidth="904.0">
+                          <columns>
+                            <TableColumn fx:id="columCliente" prefWidth="187.0" text="Cliente" />
+                  <TableColumn prefWidth="359.0" text="Especificação do Pedido" />
+                  <TableColumn prefWidth="136.0" text="Peso" />
+                  <TableColumn prefWidth="221.0" text="Sacos Produzidos" />
+                          </columns>
+                        </TableView>
+            <Label layoutX="859.0" layoutY="597.0" text="Total de registros: " />
+            <Label layoutX="959.0" layoutY="598.0" text="0" />
+            <Button layoutX="860.0" layoutY="91.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="52.0" styleClass="btn" text="Editar" textFill="WHITE" />
+            <Button layoutX="914.0" layoutY="91.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="52.0" styleClass="btn" text="Excluir" textFill="WHITE" />
+            <Label layoutX="63.0" layoutY="95.0" text="Dia:" />
+            <TextField layoutX="88.0" layoutY="91.0" prefHeight="25.0" prefWidth="33.0" />
+            <Label layoutX="130.0" layoutY="95.0" text="Mes:" />
+            <Label layoutX="289.0" layoutY="95.0" text="Ano:" />
+            <TextField layoutX="318.0" layoutY="91.0" prefHeight="25.0" prefWidth="46.0" />
+            <ComboBox layoutX="159.0" layoutY="91.0" prefHeight="25.0" prefWidth="122.0" />
+            <Button layoutX="372.0" layoutY="91.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" styleClass="btn" text="Pesquisar" textFill="WHITE" />
+                  
+             
+         </children>
+      </Pane>
+   </children>
+</VBox>

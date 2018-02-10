@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane fx:id="anchorSaidaEstoque" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="1114.0" stylesheets="@../main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.view.estoque.SaidaEstoqueDialogController">
+   <children>
+      <Pane maxHeight="1.7976931348623157E308" prefHeight="778.0" prefWidth="1114.0">
+         <children>
+                        <Label layoutX="9.0" layoutY="23.0" text="ESTOQUE  &gt; LANÇAR SAÍDA DE ESTOQUE" textFill="#d07a17">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tableEstoqueDisponivel" layoutX="218.0" layoutY="119.0" prefHeight="244.0" prefWidth="884.0">
+                          <columns>
+                  <TableColumn fx:id="columnProduto" prefWidth="319.0" text="Produto" />
+                  <TableColumn fx:id="columnCor" prefWidth="230.0" text="Cor" />
+                  <TableColumn fx:id="columnPeso" prefWidth="152.0" text="Peso" />
+                  <TableColumn fx:id="columnQuantidade" prefWidth="182.0" text="Quantidade" />
+                          </columns>
+                        </TableView>
+            <Label layoutX="994.0" layoutY="365.0" text="Total de registros: " />
+            <Label fx:id="labelTotalRegistro" layoutX="1094.0" layoutY="366.0" text="0" />
+            <Button layoutX="43.0" layoutY="287.0" mnemonicParsing="false" onAction="#limpar" prefHeight="25.0" prefWidth="86.0" styleClass="btnCancelar" text="Limpar filtro" textFill="WHITE" />
+            <Button layoutX="132.0" layoutY="287.0" mnemonicParsing="false" onAction="#pesquisar" prefHeight="25.0" prefWidth="78.0" styleClass="btn" text="Pesquisar" textFill="WHITE" />
+            <Label layoutX="16.0" layoutY="219.0" text="Cor:" />
+            <TextField fx:id="paramCor" layoutX="14.0" layoutY="237.0" prefHeight="25.0" prefWidth="196.0" />
+            <TextField fx:id="paramProduto" layoutX="14.0" layoutY="183.0" prefHeight="25.0" prefWidth="196.0" />
+            <Label layoutX="17.0" layoutY="166.0" text="Produto:" />
+            <Separator layoutX="11.0" layoutY="143.0" prefHeight="3.0" prefWidth="196.0" />
+            <Label layoutX="11.0" layoutY="119.0" text="FILTRO" textFill="#d07a17">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="222.0" layoutY="413.0" text="Produto:" />
+            <TextField fx:id="produtoRow" disable="true" layoutX="221.0" layoutY="430.0" prefHeight="25.0" prefWidth="253.0" />
+            <TextField fx:id="corRow" disable="true" layoutX="221.0" layoutY="484.0" prefHeight="25.0" prefWidth="189.0" />
+            <Label layoutX="222.0" layoutY="467.0" text="Cor:" />
+            <Label layoutX="223.0" layoutY="520.0" text="Peso:" />
+            <TextField fx:id="pesoRow" disable="true" layoutX="222.0" layoutY="537.0" prefHeight="25.0" prefWidth="134.0" />
+            <TextField fx:id="qtdDisponivelRow" disable="true" layoutX="524.0" layoutY="429.0" prefHeight="25.0" prefWidth="134.0" />
+            <Label layoutX="524.0" layoutY="412.0" text="Quantidade disponível:" />
+            <Label layoutX="525.0" layoutY="467.0" text="Cliente:" />
+            <TextField fx:id="clienteRow" layoutX="525.0" layoutY="484.0" prefHeight="25.0" prefWidth="310.0" />
+            <Label layoutX="701.0" layoutY="411.0" text="Quantidade de saída:" />
+            <TextField fx:id="qtdSaida" layoutX="701.0" layoutY="428.0" prefHeight="25.0" prefWidth="134.0" />
+            <Button layoutX="750.0" layoutY="531.0" mnemonicParsing="false" onAction="#salvarSaidaEstoque" prefHeight="25.0" prefWidth="86.0" styleClass="btn" text="Salvar" textFill="WHITE" />
+            <Label layoutX="217.0" layoutY="90.0" text="Sacos disponíveis em estoque" textFill="#5e6065">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

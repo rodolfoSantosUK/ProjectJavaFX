@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="dataPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="756.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.FxmlInicioController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="600.0" style="-fx-background-color: black;" VBox.vgrow="NEVER">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="593.0" prefWidth="116.0" style="-fx-background-color: gray;">
+         <children>
+            <Button layoutY="2.0" mnemonicParsing="false" onAction="#loadPane" prefHeight="113.0" prefWidth="116.0" style="-fx-background-color: #61a2b1;" text="Administrativo" textFill="WHITE" />
+            <Button layoutY="117.0" mnemonicParsing="false" prefHeight="113.0" prefWidth="116.0" style="-fx-background-color: #61a2b1;" text="Extrusão" textFill="WHITE" />
+            <Button layoutY="232.0" mnemonicParsing="false" prefHeight="113.0" prefWidth="116.0" style="-fx-background-color: #61a2b1;" text="Corte &amp; Solda" textFill="WHITE" />
+            <Button layoutY="347.0" mnemonicParsing="false" prefHeight="113.0" prefWidth="116.0" style="-fx-background-color: #61a2b1;" text="Estoque" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

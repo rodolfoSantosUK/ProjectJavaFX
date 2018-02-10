@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="278.0" prefWidth="442.0" style="-fx-background-color: #060c49;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.controller.FxmlSplashInicioController">
+   <children>
+      <Pane layoutX="7.0" prefHeight="278.0" prefWidth="442.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="301.0" fitWidth="470.0">
+               <image>
+                  <Image url="@../resources/splash.jpg" />
+               </image>
+            </ImageView>
+            <ProgressBar fx:id="progBarSplash" layoutX="1.0" layoutY="201.0" prefHeight="18.0" prefWidth="450.0" />
+            <Label layoutX="68.0" layoutY="66.0" text="SISCOPLASTIC v1.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="181.0" text="Inicializando sistema. Aguarde ..." textFill="#d30909">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

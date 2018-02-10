@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<VBox fx:id="vBoxRelatorioGrao" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="1114.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.view.relatorios.RelatorioGraoEstoqueController">
+   <children>
+      <Pane maxHeight="1.7976931348623157E308" prefHeight="778.0" prefWidth="1114.0">
+         <children>
+           
+                        <Separator prefHeight="3.0" prefWidth="476.0" />
+                        <Label layoutX="9.0" layoutY="23.0" text="ADMINISTRATIVO &gt; RELATÓRIO DE SACOS PRODUZIDOS" textFill="#d07a17">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tableGraoEstoque" layoutX="63.0" layoutY="85.0" prefHeight="503.0" prefWidth="849.0">
+                          <columns>
+                            <TableColumn fx:id="columnTipoGraoEstoque" prefWidth="485.0" text="Tipo" />
+                            <TableColumn fx:id="columnQtdGraoEstoque" prefWidth="193.0" text="Quantidade" />
+                  <TableColumn prefWidth="168.0" text="Cor" />
+                          </columns>
+                        </TableView>
+                  
+             
+         </children>
+      </Pane>
+   </children>
+</VBox>

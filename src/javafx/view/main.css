@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 19, 2015, 2:15:13 PM
+    Author     : Rodolfo
+*/
+
+.HBox {
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+}
+
+.VBox {
+    -fx-background-color: cornsilk;
+}
+
+.btn {
+ -fx-background-color:
+        linear-gradient(#61a2b1, #2A5058),
+        radial-gradient(center 50% -40%, radius 200%, #61a2b1 45%, #2A5058 50%);
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: white;
+}
+
+.btn:hover {
+  -fx-background-color: 
+        #000000,
+        linear-gradient(#61a2b1, #2A5058),
+        linear-gradient(#61a2b1, #2A5058),
+        linear-gradient(#61a2b1, #2A5058);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.btn:pressed {
+  -fx-background-color: 
+        #000000,
+        linear-gradient(#61a2b1, #2A5058),
+        linear-gradient(#61a2b1, #2A5058),
+        linear-gradient(#61a2b1, #2A5058);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.btnMenu {
+ -fx-background-color:
+       white;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: black;
+}
+
+.btnMenu:hover {
+  -fx-background-color: 
+        #000000;
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.btnCancelar {
+ -fx-background-color:
+       darkgray;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: black;
+}
+
+.btnCancelar:hover {
+  -fx-background-color: 
+        gray;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
