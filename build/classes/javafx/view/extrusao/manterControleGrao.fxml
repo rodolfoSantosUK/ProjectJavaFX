@@ -52,6 +52,7 @@
             <RadioButton layoutX="14.0" layoutY="290.0" mnemonicParsing="false" text="Ordenar por Em estoque" />
             <Button layoutX="99.0" layoutY="330.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" styleClass="btn" text="Pesquisar" textFill="WHITE" />
             <Button layoutX="11.0" layoutY="330.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" styleClass="btnCancelar" text="Limpar filtro" textFill="WHITE" />
+            <Button layoutX="865.0" layoutY="70.0" mnemonicParsing="false" onAction="#atualizarTabela" prefHeight="25.0" prefWidth="63.0" styleClass="btn" text="Atualizar" textFill="WHITE" />
                   
              
          </children>

@@ -85,8 +85,7 @@ public class FXMLControleGraoController  implements Initializable  {
         tableGrao.refresh();
         
         // Listener acionado diante de quaisquer alterações na seleção de itens do TableView
-        tableGrao.getSelectionModel().selectedItemProperty().addListener(
-                (observable, oldValue, newValue) -> selecionarItemTableViewClientes(newValue));
+      //  tableGrao.getSelectionModel().selectedItemProperty().addListener( (observable, oldValue, newValue) -> selecionarItemTableViewClientes(newValue));
     
     } 
          
@@ -108,14 +107,14 @@ public class FXMLControleGraoController  implements Initializable  {
     public void carregarTableViewPigmento() {
         columnFornecedor.setCellValueFactory(new PropertyValueFactory<>("fornecedor"));
         columnEstoque.setCellValueFactory(new PropertyValueFactory<>("quantidade"));
-        columTipoPigmento.setCellValueFactory(new PropertyValueFactory<>("tipoPigmento"));
+        columTipoGrao.setCellValueFactory(new PropertyValueFactory<>("tipoPigmento"));
         
-        pigmentoDao.setConnection(null);  
-        listaPigmentos = pigmentoDao.listar();
+        graoDao.setConnection(null);  
+       // listaPigmentos = graoDao.listar();
          
-        observableListPigmento = FXCollections.observableArrayList(listaPigmentos);
-        tablePigmento.setItems(observableListPigmento);
-        totalRegistro.setText(String.valueOf(tablePigmento.getItems().size()));
+   //     observableListGrao = FXCollections.observableArrayList(listaPigmentos);
+    //    tablePigmento.setItems(observableListPigmento);
+   //     totalRegistro.setText(String.valueOf(tablePigmento.getItems().size()));
     }
     
   
@@ -133,11 +132,11 @@ public class FXMLControleGraoController  implements Initializable  {
         ControlePigmentoDialog controller = loader.getController();
         controller.setDialogStage(dialogStage);
         controller.setTipoOperacao(TipoOperacaoEnum.ALTERACAO.getTipoOperacao());
-        controller.getFornecedorTxt().setText(this.pigmento.getFornecedor());
-        controller.getTipoPigmentoTxt().setText(this.pigmento.getTipoPigmento());
-        controller.getEmEstoqueTxt().setText(String.valueOf(this.pigmento.getQuantidade()));
-        controller.getObservacaoPigmentoTxt().setText(this.pigmento.getObservacao());
-        controller.setIdPigmento(this.pigmento.getIdPigmento());
+    //    controller.getFornecedorTxt().setText(this.pigmento.getFornecedor());
+//        controller.getTipoPigmentoTxt().setText(this.pigmento.getTipoPigmento());
+   //     controller.getEmEstoqueTxt().setText(String.valueOf(this.pigmento.getQuantidade()));
+    //    controller.getObservacaoPigmentoTxt().setText(this.pigmento.getObservacao());
+    //    controller.setIdPigmento(this.pigmento.getIdPigmento());
         
         // Mostra o Dialog e espera até que o usuário o feche 
         dialogStage.show();
@@ -215,21 +214,21 @@ public class FXMLControleGraoController  implements Initializable  {
     public void carregarTableViewPigmentoPesquisa(Pigmento pigmento) {
         columnFornecedor.setCellValueFactory(new PropertyValueFactory<>("fornecedor"));
         columnEstoque.setCellValueFactory(new PropertyValueFactory<>("quantidade"));
-        columTipoPigmento.setCellValueFactory(new PropertyValueFactory<>("tipoPigmento"));
+    //    columTipoPigmento.setCellValueFactory(new PropertyValueFactory<>("tipoPigmento"));
         listaPigmentos = null;
-        pigmentoDao.setConnection(null);
+    //    pigmentoDao.setConnection(null);
            
-        listaPigmentos = pigmentoDao.pesquisar(pigmento);
+   //     listaPigmentos = pigmentoDao.pesquisar(pigmento);
             
-        observableListPigmento = FXCollections.observableArrayList(listaPigmentos);
-        tablePigmento.setItems(observableListPigmento);
-        totalRegistro.setText(String.valueOf(tablePigmento.getItems().size()));
-        tablePigmento.refresh();
+   //     observableListPigmento = FXCollections.observableArrayList(listaPigmentos);
+   //     tablePigmento.setItems(observableListPigmento);
+  //      totalRegistro.setText(String.valueOf(tablePigmento.getItems().size()));
+   //    tablePigmento.refresh();
     }
     
     public void removerPigmento() {
-        pigmentoDao.setConnection(null);
-        pigmentoDao.remover(this.pigmento);
+   //     pigmentoDao.setConnection(null);
+  //      pigmentoDao.remover(this.pigmento);
         exibirNotificacao();
         carregarTableViewPigmento();
     }
@@ -238,14 +237,14 @@ public class FXMLControleGraoController  implements Initializable  {
      * @return the pigmento
      */
     public Pigmento getPigmento() {
-        return pigmento;
+        return null; // pigmento;
     }
 
     /**
      * @param pigmento the pigmento to set
      */
     public void setPigmento(Pigmento pigmento) {
-        this.pigmento = pigmento;
+      //  this.pigmento = pigmento;
     }
 
     @FXML
@@ -253,7 +252,7 @@ public class FXMLControleGraoController  implements Initializable  {
 
         Pigmento pigmentoConsulta = new Pigmento();
         pigmentoConsulta.setFornecedor(paramFornecedor.getText());
-        pigmentoConsulta.setTipoPigmento(paramTipoPigmento.getText());
+      //  pigmentoConsulta.setTipoPigmento(paramTipoPigmento.getText());
          
         carregarTableViewPigmentoPesquisa(pigmentoConsulta);
         exibirNotificacaoPesquisa(listaPigmentos.size());
@@ -262,6 +261,6 @@ public class FXMLControleGraoController  implements Initializable  {
     @FXML
     public void limpar(ActionEvent event) {
        paramFornecedor.setText(null);
-       paramTipoPigmento.setText(null);
+      // paramTipoPigmento.setText(null);
     }
 }

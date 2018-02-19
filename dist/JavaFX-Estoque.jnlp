@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="JavaFX-Estoque.jar" size="542460" download="eager" />
+    <jar href="JavaFX-Estoque.jar" size="551464" download="eager" />
     <jar href="lib\controlsfx-8.40.13.jar" size="1213306" download="eager" />
     <jar href="lib\controlsfx-samples-8.40.13.jar" size="720107" download="eager" />
     <jar href="lib\fxsampler-1.0.10.jar" size="30876" download="eager" />

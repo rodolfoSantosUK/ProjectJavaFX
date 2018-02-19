@@ -63,7 +63,6 @@ public class FXMLControlePigmentoController implements Initializable {
     private VBox vBoxPigmento;
 
     private List<Pigmento> listaPigmentos;
-     
     
     private final PigmentoDAO pigmentoDao = new PigmentoDAO();
     
@@ -99,7 +98,6 @@ public class FXMLControlePigmentoController implements Initializable {
             this.pigmento = null; 
         }
     }
-    
     
     @FXML
     void atualizarTabela(ActionEvent event) {
